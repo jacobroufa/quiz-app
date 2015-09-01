@@ -15,6 +15,31 @@
 			<div id="progress"></div>
 		</footer>
 
-		<script src="script.js"></script>
+		<script src="quiz.js"></script>
+		<script>
+
+			var questions = {
+				0: {
+					question: 'How do you web properly?',
+					correct: 'JavaScript',
+					answers: ['PHP', 'Go', 'Perl']
+				},
+				1: {
+					question: 'What\'s the coolest style technology?',
+					correct: 'CSS',
+					answers: ['LESS', 'SCSS', 'Compass']
+				},
+				2: {
+					question: 'What template engine should I use?',
+					correct: 'HTML',
+					answers: ['Jade', 'Mustache', 'Underscore']
+				}
+			};
+
+			var quiz = new Quiz( questions );
+
+			quiz.init();
+
+		</script>
 	</body>
 </html>
